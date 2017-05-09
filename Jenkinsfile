@@ -1,7 +1,8 @@
 pipeline {
   agent {
-    node {
-      label 'mycloud-swarm'
+    docker {
+      image 'golang'
+      args 'latest'
     }
     
   }
